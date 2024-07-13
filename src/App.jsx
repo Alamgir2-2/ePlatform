@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './Components/Layout/Header/Header'
 import Home from './Components/Home/Home'
+import CoursePlayer from './Components/Courses/CoursePlayer/CoursePlayer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,10 +12,10 @@ function App() {
     
       <Router>
       <Header />
-      <main>
-        
+      <main>        
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/course-player' element={<CoursePlayer></CoursePlayer>} />
         </Routes>
         {/* <Routes>
           <Route path="/" element={<HomePage />} />
