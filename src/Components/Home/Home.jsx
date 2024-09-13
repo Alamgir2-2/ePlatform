@@ -12,7 +12,7 @@ const Home = () => {
         <div className="">
             <div className="container mx-auto px-4">
 
-                <section className=" text-white text-center py-20">
+                <section className=" text-white text-center py-16">
                     <div className="container mx-auto">
                         <h1 className="text-5xl font-bold mb-4">Welcome to Our Learning Platform</h1>
                         <p className="text-xl mb-8">Your journey to knowledge begins here. Explore our popular courses and start learning today.</p>

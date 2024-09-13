@@ -6,6 +6,9 @@ import Home from './Components/Home/Home'
 import CoursePlayer from './Components/Courses/CoursePlayer/CoursePlayer'
 import Signup from './Components/Authentication/Signup/Signup'
 import LoginPage from './Components/Authentication/Login/Login'
+import InstructorProfilePage from './Components/Instructor/InstrutcorProfile/InProfilePage';
+import BlogSection from './Components/Blogs/BlogSection'
+import CourseSection from './Components/Courses/CourseSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +23,9 @@ function App() {
           <Route path='/course-player' element={<CoursePlayer></CoursePlayer>} />
           <Route path='/signup' element={<Signup></Signup>}/>
           <Route path='/login' element={<LoginPage></LoginPage>}/>
+          <Route path='/blog' element={<BlogSection></BlogSection>}/>
+          <Route path='/courses' element={<CourseSection></CourseSection>}/>
+          <Route path="/instructor" element={<InstructorProfilePage></InstructorProfilePage>} />
         </Routes>
         {/* <Routes>
           <Route path="/" element={<HomePage />} />
